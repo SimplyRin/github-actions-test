@@ -28,5 +28,5 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "target/*.jar"
-        bodyFile: "README.md"
+        draft: true
         token: ${{ secrets.GITHUB_TOKEN }}
