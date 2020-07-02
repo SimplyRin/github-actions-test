@@ -27,6 +27,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: "release.tar.gz,target/*.jar"
+        artifacts: "target/*.jar"
         bodyFile: "README.md"
         token: ${{ secrets.GITHUB_TOKEN }}
