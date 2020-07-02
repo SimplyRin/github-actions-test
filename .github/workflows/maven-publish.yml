@@ -30,3 +30,7 @@ jobs:
         name: Test
         # A file, directory or wildcard pattern that describes what to upload
         path: target/*.jar
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "release.tar.gz,target/*.jar"
+        token: ${{ secrets.GITHUB_TOKEN }}
